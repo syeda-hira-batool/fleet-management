@@ -1,0 +1,6 @@
+Registration,Model,Year,Driver,Department,Current KM,Fuel Level (%),Status,Last Service Date,Next Service KM
+BMP-692,Toyota Corolla,2022,Ali Khan,Operations,35200,75,Active,2026-06-10,40000
+ABC-123,Honda Civic,2021,Ahmed Raza,HR,48600,42,Service Due,2026-03-12,50000
+XYZ-456,Suzuki Cultus,2023,Bilal Ahmed,Logistics,18200,90,Active,2026-07-05,25000
+DEF-789,Toyota Hilux,2020,Imran Ali,Operations,72500,28,Breakdown,2026-05-20,75000
+GHI-321,Kia Sportage,2024,Hassan Shah,Administration,9200,68,Active,2026-07-15,15000
