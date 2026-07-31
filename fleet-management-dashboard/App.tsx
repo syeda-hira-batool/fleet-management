@@ -18,7 +18,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/VehiclesPage" element={<VehiclePage />} />
             <Route path="/VehiclesPage/:registration" element={<VehicleDetailPage />} />
-            
+            {/* Add these pages as you build them out: */}
             {/* <Route path="/InfoPage" element={<InfoPage />} /> */}
             {/* <Route path="/DriversPage" element={<DriversPage />} /> */}
             {/* <Route path="/MaintenancePage" element={<MaintenancePage />} /> */}

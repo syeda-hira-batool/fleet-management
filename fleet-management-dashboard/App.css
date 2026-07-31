@@ -1,0 +1,123 @@
+:root {
+  --sidebar-bg: #276F27;
+  --accent: #266210;
+  --text-muted: #e5e7eb;
+  --text-light: black;
+  --transition-speed: 0.3s;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f5f7;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--sidebar-bg);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  transition: width var(--transition-speed) ease-in-out;
+  overflow: hidden;
+  z-index: 50;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-closed {
+  width: 72px;
+}
+
+.sidebar-open {
+  width: 260px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.sidebar-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+  background-color: #66BB6A;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px;
+  gap: 4px;
+  overflow-y: auto;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #66BB6A;
+  color: var(--text-light);
+}
+
+.sidebar-link:hover .sidebar-icon {
+  color: var(--accent);
+}
+
+.sidebar-icon {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.sidebar-label {
+  transition: opacity var(--transition-speed) ease-in-out;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 72px;
+  padding: 32px;
+  transition: margin-left var(--transition-speed) ease-in-out;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.main-content.shifted {
+  margin-left: 260px;
+}
