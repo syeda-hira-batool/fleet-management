@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./MyComponents/Navbar";
 import HomePage from "./MyComponents/HomePage";
 import VehiclePage from "./MyComponents/VehiclePage";
 import VehicleDetailPage from "./MyComponents/VehicleDetailPage";
+import ReportPage from "./MyComponents/ReportPage";
 import './App.css'
 
 export default function App() {
@@ -18,7 +19,9 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/VehiclesPage" element={<VehiclePage />} />
             <Route path="/VehiclesPage/:registration" element={<VehicleDetailPage />} />
-            
+            <Route path="/ReportPage" element={<ReportPage />} />
+            <Route path="/ReportPage/:registration" element={<ReportPage />} />
+            {/* Add these pages as you build them out: */}
             {/* <Route path="/InfoPage" element={<InfoPage />} /> */}
             {/* <Route path="/DriversPage" element={<DriversPage />} /> */}
             {/* <Route path="/MaintenancePage" element={<MaintenancePage />} /> */}
