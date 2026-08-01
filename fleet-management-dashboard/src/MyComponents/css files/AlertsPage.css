@@ -1,0 +1,350 @@
+.alertspage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.alertspage-loading,
+.alertspage-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  font-size: 14px;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.alertspage-loading {
+  color: var(--color-text-secondary, #64748B);
+  background: var(--color-card, #E8F5E9);
+}
+
+.alertspage-error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid var(--color-danger, #EF4444);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.alertspage-header {
+  text-align: center;
+  padding-top: 4px;
+}
+
+.alertspage-title {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-text, #0F172A);
+}
+
+.alertspage-subtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary, #64748B);
+  margin-top: 4px;
+}
+
+/* Summary cards */
+.ap-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.ap-summary-card {
+  background: #E8F5E9;
+  border: 1px solid var(--color-border, #E2E8F0);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ap-summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(39, 111, 39, 0.14);
+}
+
+.ap-summary-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ap-summary-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0F172A;
+  margin-top: 4px;
+}
+
+.ap-summary-critical {
+  border-left: 4px solid #dc2626;
+}
+
+.ap-summary-warning {
+  border-left: 4px solid #d97706;
+}
+
+.ap-summary-info {
+  border-left: 4px solid #2563eb;
+}
+
+/* Search + filter controls */
+.ap-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.ap-search-box {
+  position: relative;
+  flex: 1 1 260px;
+  min-width: 220px;
+}
+
+.ap-search-box svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+.ap-search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid var(--color-border, #E2E8F0);
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background: #fff;
+  transition: border-color 0.15s ease;
+}
+
+.ap-search-input:focus {
+  border-color: #276F27;
+}
+
+.ap-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ap-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border, #E2E8F0);
+  background: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.ap-filter-chip:hover {
+  border-color: #276F27;
+}
+
+.ap-filter-chip.active {
+  background: #276F27;
+  border-color: #276F27;
+  color: #fff;
+}
+
+.ap-filter-chip-critical.active {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+.ap-filter-chip-warning.active {
+  background: #d97706;
+  border-color: #d97706;
+}
+
+.ap-filter-chip-info.active {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.ap-filter-count {
+  font-weight: 700;
+  opacity: 0.75;
+}
+
+.ap-empty-state {
+  padding: 48px 16px;
+  text-align: center;
+  color: #64748B;
+  font-size: 14px;
+  background: #E8F5E9;
+  border-radius: 14px;
+}
+
+/* Alert list */
+.alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.alert-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #E8F5E9;
+  border: 1px solid var(--color-border, #E2E8F0);
+  border-left: 4px solid #94a3b8;
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.alert-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(39, 111, 39, 0.12);
+}
+
+.alert-card-critical {
+  border-left-color: #dc2626;
+}
+
+.alert-card-warning {
+  border-left-color: #d97706;
+}
+
+.alert-card-info {
+  border-left-color: #2563eb;
+}
+
+.alert-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(39, 111, 39, 0.12);
+  color: #276F27;
+}
+
+.alert-card-critical .alert-card-icon {
+  background: rgba(220, 38, 38, 0.12);
+  color: #dc2626;
+}
+
+.alert-card-warning .alert-card-icon {
+  background: rgba(217, 119, 6, 0.12);
+  color: #d97706;
+}
+
+.alert-card-info .alert-card-icon {
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+}
+
+.alert-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.alert-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.alert-card-category {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.alert-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 2px 0 4px;
+}
+
+.alert-card-desc {
+  font-size: 13px;
+  color: #64748B;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.alert-card-link {
+  flex-shrink: 0;
+  align-self: center;
+  padding: 8px 14px;
+  background: #276F27;
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.alert-card-link:hover {
+  background: #266210;
+}
+
+/* Shared badges (kept consistent with the rest of the app) */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-active {
+  background: rgba(34, 197, 94, 0.12);
+  color: #16a34a;
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+}
+
+.badge-danger {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+}
+
+.badge-info {
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+}
+
+@media (max-width: 640px) {
+  .alert-card {
+    flex-direction: column;
+  }
+  .alert-card-link {
+    align-self: stretch;
+    text-align: center;
+  }
+}
