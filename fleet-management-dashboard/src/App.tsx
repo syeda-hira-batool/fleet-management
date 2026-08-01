@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import Navbar from "./MyComponents/Navbar";
 import HomePage from "./MyComponents/HomePage";
 import VehiclePage from "./MyComponents/VehiclePage";
@@ -29,9 +29,7 @@ export default function App() {
             <Route path="/MaintenancePage" element={<MaintenancePage />} />
             <Route path="/AnalyticsPage" element={<AnalyticsPage />} />
             <Route path="/AlertsPage" element={<AlertsPage />} />
-            {/* Add these pages as you build them out: */}
-            {/* <Route path="/InfoPage" element={<InfoPage />} /> */}
-            {/* <Route path="/SettingsPage" element={<SettingsPage />} /> */}
+
           </Routes>
         </main>
       </div>

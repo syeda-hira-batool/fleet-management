@@ -9,7 +9,6 @@ import {
   Wrench,
   BarChart3,
   Bell,
-  Settings,
   Menu,
   X,
 } from "lucide-react";
@@ -26,8 +25,7 @@ const navItems = [
   { label: "Drivers", to: "/DriversPage", icon: Users },
   { label: "Maintenance", to: "/MaintenancePage", icon: Wrench },
   { label: "Analytics", to: "/AnalyticsPage", icon: BarChart3 },
-  { label: "Alerts", to: "/AlertsPage", icon: Bell },
-  { label: "Settings", to: "/SettingsPage", icon: Settings },
+  { label: "Alerts", to: "/AlertsPage", icon: Bell }
 ];
 
 export default function NavBar({ isOpen, setIsOpen }: NavBarProps) {
