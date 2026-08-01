@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Papa from "papaparse";
-import "./VehicleDetailPage.css";
+import "./css files/VehicleDetailPage.css";
 import {
   ArrowLeft,
   Car,
@@ -15,7 +15,6 @@ import {
   Clock,
 } from "lucide-react";
 
-/*  Types matching the CSV column headers  */
 interface VehicleRow {
   Registration: string;
   Model: string;

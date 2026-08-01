@@ -3,7 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import Papa from "papaparse";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
-import "./ReportPage.css";
+import "./css files/ReportPage.css";
 import {
   ArrowLeft,
   Car,

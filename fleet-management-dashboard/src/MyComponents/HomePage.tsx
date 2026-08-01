@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
-import "./HomePage.css";
+import "./css files/HomePage.css";
 import {
   BarChart,
   Bar,

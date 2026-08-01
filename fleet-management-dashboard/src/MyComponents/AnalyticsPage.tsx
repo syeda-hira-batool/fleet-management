@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Papa from "papaparse";
-import "./AnalyticsPage.css";
+import "./css files/AnalyticsPage.css";
 import {
   PieChart,
   Pie,
@@ -313,7 +313,7 @@ export default function AnalyticsPage() {
                 <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#f3f4f6" />
                 <XAxis type="number" tick={{ fontSize: 12 }} />
                 <YAxis type="category" dataKey="registration" tick={{ fontSize: 12 }} width={90} />
-                <Tooltip formatter={(value) => Number(formatPKR(value as number))} />
+                <Tooltip formatter={(value) => formatPKR(value as number)} />
                 <Bar dataKey="cost" fill="#dc2626" radius={[0, 6, 6, 0]} />
               </BarChart>
             </ResponsiveContainer>
