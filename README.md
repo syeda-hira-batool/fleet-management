@@ -7,7 +7,6 @@ A modern and responsive Fleet Management Dashboard built with **React**, **TypeS
 <p align="center">
   <img src="./fleet-management-dashboard/fleet.png" alt="Fleet Management Dashboard Demo" width="100%">
 </p>
-
 ---
 
 ## ✨ Features
