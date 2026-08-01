@@ -52,7 +52,7 @@
 .sidebar-toggle {
   background: transparent;
   border: none;
-  color: var(--text-light);
+  color: white;
   cursor: pointer;
   padding: 8px;
   border-radius: 8px;
