@@ -5,6 +5,8 @@ import HomePage from "./MyComponents/HomePage";
 import VehiclePage from "./MyComponents/VehiclePage";
 import VehicleDetailPage from "./MyComponents/VehicleDetailPage";
 import ReportPage from "./MyComponents/ReportPage";
+import DriversPage from "./MyComponents/DriversPage";
+import MaintenancePage from "./MyComponents/MaintenancePage";
 import './App.css'
 
 export default function App() {
@@ -21,10 +23,10 @@ export default function App() {
             <Route path="/VehiclesPage/:registration" element={<VehicleDetailPage />} />
             <Route path="/ReportPage" element={<ReportPage />} />
             <Route path="/ReportPage/:registration" element={<ReportPage />} />
+            <Route path="/DriversPage" element={<DriversPage />} />
+            <Route path="/MaintenancePage" element={<MaintenancePage />} />
             {/* Add these pages as you build them out: */}
             {/* <Route path="/InfoPage" element={<InfoPage />} /> */}
-            {/* <Route path="/DriversPage" element={<DriversPage />} /> */}
-            {/* <Route path="/MaintenancePage" element={<MaintenancePage />} /> */}
             {/* <Route path="/AnalyticsPage" element={<AnalyticsPage />} /> */}
             {/* <Route path="/AlertsPage" element={<AlertsPage />} /> */}
             {/* <Route path="/SettingsPage" element={<SettingsPage />} /> */}

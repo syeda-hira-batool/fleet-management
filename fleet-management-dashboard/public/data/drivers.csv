@@ -1,0 +1,6 @@
+Driver ID,Name,License Number,Phone,Department,Assigned Vehicle,Status,License Expiry,Joined Date
+DRV-001,Ahmed Raza,LHR-88213,0300-1234567,Logistics,LEA-2201,Active,2027-05-14,2021-03-01
+DRV-002,Bilal Khan,KHI-44210,0321-9876543,Sales,KHI-7788,Active,2026-11-02,2020-07-15
+DRV-003,Sana Malik,ISB-30021,0333-4455667,Operations,,On Leave,2025-09-20,2019-01-10
+DRV-004,Usman Tariq,LHR-77410,0345-1122334,Logistics,LHR-4523,Active,2028-02-18,2022-06-01
+DRV-005,Farah Sheikh,KHI-19983,0311-9988776,Maintenance,,Inactive,2024-12-05,2018-04-22

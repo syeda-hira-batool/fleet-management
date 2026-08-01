@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Papa from "papaparse";
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
 import "./ReportPage.css";
 import {
   ArrowLeft,
@@ -14,7 +16,7 @@ import {
   AlertTriangle,
   Clock,
   Download,
-  Printer,
+  FileDown,
   FileText,
 } from "lucide-react";
 
@@ -120,6 +122,7 @@ export default function ReportPage() {
   const [selectedReg, setSelectedReg] = useState<string>(registration ?? "");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [generatingPdf, setGeneratingPdf] = useState(false);
 
   useEffect(() => {
     async function loadAll() {
@@ -184,48 +187,47 @@ export default function ReportPage() {
     navigate(`/ReportPage/${encodeURIComponent(reg)}`, { replace: true });
   }
 
-  function handleDownloadPDF() {
-    if (!printRef.current || !vehicle) return;
-    const printWindow = window.open("", "_blank", "width=1000,height=1300");
-    if (!printWindow) return;
+ 
+  async function handleDownloadPDF() {
+    if (!printRef.current || !vehicle || generatingPdf) return;
+    setGeneratingPdf(true);
+    try {
+      const element = printRef.current;
 
-    const styles = `
-      <style>
-        * { box-sizing: border-box; }
-        body { font-family: -apple-system, Segoe UI, Arial, sans-serif; padding: 36px; color: #111827; }
-        h1 { font-size: 22px; margin: 0; }
-        h2, h3 { margin: 0 0 10px; }
-        .report-print-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #111827; padding-bottom: 14px; margin-bottom: 22px; }
-        .report-print-header p { margin: 4px 0 0; color: #6b7280; font-size: 13px; }
-        .report-print-section { margin-bottom: 26px; page-break-inside: avoid; }
-        .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
-        .info-item { display: flex; justify-content: space-between; border-bottom: 1px solid #f3f4f6; padding-bottom: 6px; font-size: 13px; }
-        .info-label { color: #6b7280; }
-        .info-value { font-weight: 600; }
-        table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-        th, td { border: 1px solid #e5e7eb; padding: 7px 10px; text-align: left; font-size: 12.5px; }
-        th { background: #f9fafb; font-weight: 700; }
-        .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; }
-        .badge-active { background: #dcfce7; color: #16a34a; }
-        .badge-warning { background: #fef3c7; color: #b45309; }
-        .badge-danger { background: #fee2e2; color: #dc2626; }
-        .summary-row { display: flex; gap: 24px; margin-bottom: 22px; }
-        .summary-box { flex: 1; border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px 14px; }
-        .summary-box p { margin: 0; font-size: 12px; color: #6b7280; }
-        .summary-box h3 { font-size: 20px; margin: 4px 0 0; }
-        .empty-note { color: #9ca3af; font-size: 13px; font-style: italic; }
-        @media print { body { padding: 16px; } }
-      </style>
-    `;
+      const canvas = await html2canvas(element, {
+        scale: 2,
+        backgroundColor: "#ffffff",
+        useCORS: true,
+      });
 
-    printWindow.document.write(
-      `<html><head><title>Vehicle Report - ${vehicle.Registration}</title>${styles}</head><body>${printRef.current.innerHTML}</body></html>`
-    );
-    printWindow.document.close();
-    printWindow.focus();
-    setTimeout(() => {
-      printWindow.print();
-    }, 350);
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF("p", "pt", "a4");
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const pageHeight = pdf.internal.pageSize.getHeight();
+
+      const imgWidth = pageWidth;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+      let heightLeft = imgHeight;
+      let position = 0;
+
+      pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
+
+      while (heightLeft > 0) {
+        position = heightLeft - imgHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
+      }
+
+      pdf.save(`${vehicle.Registration}_report.pdf`);
+    } catch (err) {
+      console.error(err);
+      setError("Failed to generate the PDF. Please try again.");
+    } finally {
+      setGeneratingPdf(false);
+    }
   }
 
   function handleDownloadCSV() {
@@ -346,9 +348,9 @@ export default function ReportPage() {
             type="button"
             className="reportpage-btn reportpage-btn-primary"
             onClick={handleDownloadPDF}
-            disabled={!vehicle}
+            disabled={!vehicle || generatingPdf}
           >
-            <Printer size={16} /> Download PDF
+            <FileDown size={16} /> {generatingPdf ? "Generating…" : "Download PDF"}
           </button>
           <button
             type="button"

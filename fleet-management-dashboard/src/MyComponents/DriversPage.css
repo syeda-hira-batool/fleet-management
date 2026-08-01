@@ -1,0 +1,246 @@
+.driverspage {
+  padding: 24px 32px 48px;
+}
+
+.driverspage-loading,
+.driverspage-error {
+  padding: 48px 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.driverspage-error {
+  color: #dc2626;
+}
+
+.driverspage-header {
+  margin-bottom: 8px;
+}
+
+.driverspage-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 6px;
+}
+
+.driverspage-subtitle {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Search + filter controls */
+.dp-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 24px;
+}
+
+.dp-search-box {
+  position: relative;
+  flex: 1 1 260px;
+  min-width: 220px;
+}
+
+.dp-search-box svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.dp-search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease;
+}
+
+.dp-search-input:focus {
+  border-color: #6366f1;
+}
+
+.dp-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dp-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dp-filter-chip:hover {
+  border-color: #c7d2fe;
+}
+
+.dp-filter-chip.active {
+  background: #111827;
+  border-color: #111827;
+  color: #fff;
+}
+
+.dp-filter-count {
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.dp-empty-state {
+  padding: 48px 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Driver grid + cards */
+.driver-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.driver-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.driver-card:hover {
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
+  transform: translateY(-2px);
+}
+
+.driver-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.driver-card-avatar {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.driver-card-top > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.driver-card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.driver-card-id {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: #9ca3af;
+}
+
+.driver-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.driver-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 8px;
+}
+
+.driver-detail-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.driver-detail-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+}
+
+.driver-detail-value {
+  font-weight: 600;
+  color: #111827;
+  text-align: right;
+}
+
+.driver-vehicle-link {
+  color: #4f46e5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.driver-vehicle-link:hover {
+  text-decoration: underline;
+}
+
+/* Shared badge styles (kept consistent with the rest of the app) */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge-active {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.badge-warning {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.badge-danger {
+  background: #fee2e2;
+  color: #dc2626;
+}
