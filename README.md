@@ -12,7 +12,7 @@ Fleet Management Dashboard is a modern and responsive admin dashboard designed t
 ## Home Page:
 
 <p align="center">
-  <img src="./readmes/readme1.png" alt="Home Page" width="100%">
+  <img src="./readmes/readme1.PNG" alt="Home Page" width="100%">
 </p>
 
 ---
