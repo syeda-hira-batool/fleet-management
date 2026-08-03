@@ -159,7 +159,7 @@ export default function VehiclePage() {
           transition: border-color 0.15s ease;
         }
         .vp-search-input:focus {
-          border-color: #6366f1;
+          border-color: #0D47A1;
         }
         .vp-filters {
           display: flex;
@@ -181,11 +181,11 @@ export default function VehiclePage() {
           transition: all 0.15s ease;
         }
         .vp-filter-chip:hover {
-          border-color: #c7d2fe;
+          border-color: #90CAF9;
         }
         .vp-filter-chip.active {
-          background: #111827;
-          border-color: #111827;
+          background: #0D47A1;
+          border-color: #0D47A1;
           color: #fff;
         }
         .vp-filter-count {

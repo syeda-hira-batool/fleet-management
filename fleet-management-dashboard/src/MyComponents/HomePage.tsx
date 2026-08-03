@@ -265,8 +265,8 @@ export default function HomePage() {
           <ResponsiveContainer width="100%" height={260}>
             <LineChart data={monthlyCostData}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-              <XAxis dataKey="month" tick={{ fontSize: 12 }} stroke="#9ca3af" />
-              <YAxis tick={{ fontSize: 12 }} stroke="#9ca3af" />
+              <XAxis dataKey="month" tick={{ fontSize: 12 }} stroke="#0D47A1" />
+              <YAxis tick={{ fontSize: 12 }} stroke="#0D47A1" />
               <Tooltip
                 formatter={(value) => formatPKR(Number((value)))}
                 contentStyle={{ borderRadius: 8, border: "none", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
@@ -274,9 +274,9 @@ export default function HomePage() {
               <Line
                 type="monotone"
                 dataKey="cost"
-                stroke="#276F27"
+                stroke="#0D47A1"
                 strokeWidth={3}
-                dot={{ r: 4, fill: "#276F27" }}
+                dot={{ r: 4, fill: "#0D47A1" }}
                 activeDot={{ r: 6 }}
               />
             </LineChart>
@@ -314,10 +314,10 @@ export default function HomePage() {
           <ResponsiveContainer width="100%" height={240}>
             <BarChart data={departmentData}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-              <XAxis dataKey="name" tick={{ fontSize: 12 }} stroke="#9ca3af" />
-              <YAxis allowDecimals={false} tick={{ fontSize: 12 }} stroke="#9ca3af" />
+              <XAxis dataKey="name" tick={{ fontSize: 12 }} stroke="#0D47A1" />
+              <YAxis allowDecimals={false} tick={{ fontSize: 12 }} stroke="#0D47A1" />
               <Tooltip contentStyle={{ borderRadius: 8, border: "none", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }} />
-              <Bar dataKey="value" fill="#276F27" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="value" fill="#0D47A1" radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>

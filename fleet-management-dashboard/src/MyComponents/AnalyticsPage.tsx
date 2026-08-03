@@ -94,7 +94,7 @@ const PRIORITY_COLORS: Record<string, string> = {
   Low: "#16a34a",
 };
 
-/** Optional: this file, drop it in /public/data/ to see real data instead of skeleton empty states. */
+/** this file, drop it in /public/data/ to see real data instead of skeleton empty states. (it is optional) */
 export default function AnalyticsPage() {
   const [vehicles, setVehicles] = useState<VehicleRow[]>([]);
   const [maintenance, setMaintenance] = useState<MaintenanceRow[]>([]);

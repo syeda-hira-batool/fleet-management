@@ -1,6 +1,6 @@
 :root {
-  --sidebar-bg: #276F27;
-  --accent: #266210;
+  --sidebar-bg: #0D47A1;
+  --accent: #2196F3;
   --text-muted: #e5e7eb;
   --text-light: black;
   --transition-speed: 0.3s;
@@ -63,7 +63,8 @@
 }
 
 .sidebar-toggle:hover {
-  background-color: #66BB6A;
+  background-color: #E3F2FD;
+  color: black
 }
 
 .sidebar-nav {
@@ -90,7 +91,7 @@
 }
 
 .sidebar-link:hover {
-  background-color: #66BB6A;
+  background-color: #E3F2FD;
   color: var(--text-light);
 }
 

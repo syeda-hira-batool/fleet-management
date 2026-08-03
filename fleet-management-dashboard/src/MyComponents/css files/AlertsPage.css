@@ -17,7 +17,7 @@
 
 .alertspage-loading {
   color: var(--color-text-secondary, #64748B);
-  background: var(--color-card, #E8F5E9);
+  background: var(--color-card, #E3F2FD);
 }
 
 .alertspage-error {
@@ -54,7 +54,7 @@
 }
 
 .ap-summary-card {
-  background: #E8F5E9;
+  background: #E3F2FD;
   border: 1px solid var(--color-border, #E2E8F0);
   border-radius: 14px;
   padding: 18px;
@@ -64,7 +64,7 @@
 
 .ap-summary-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(39, 111, 39, 0.14);
+  box-shadow: 0 10px 24px rgba(33, 150, 243, 0.14);
 }
 
 .ap-summary-label {
@@ -91,7 +91,7 @@
 }
 
 .ap-summary-info {
-  border-left: 4px solid #2563eb;
+  border-left: 4px solid #2196F3;
 }
 
 /* Search + filter controls */
@@ -130,7 +130,7 @@
 }
 
 .ap-search-input:focus {
-  border-color: #276F27;
+  border-color: #0D47A1;
 }
 
 .ap-filters {
@@ -155,12 +155,12 @@
 }
 
 .ap-filter-chip:hover {
-  border-color: #276F27;
+  border-color: #0D47A1;
 }
 
 .ap-filter-chip.active {
-  background: #276F27;
-  border-color: #276F27;
+  background: #0D47A1;
+  border-color: #0D47A1;
   color: #fff;
 }
 
@@ -175,8 +175,8 @@
 }
 
 .ap-filter-chip-info.active {
-  background: #2563eb;
-  border-color: #2563eb;
+  background: #2196F3;
+  border-color: #2196F3;
 }
 
 .ap-filter-count {
@@ -189,7 +189,7 @@
   text-align: center;
   color: #64748B;
   font-size: 14px;
-  background: #E8F5E9;
+  background: #E3F2FD;
   border-radius: 14px;
 }
 
@@ -204,7 +204,7 @@
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  background: #E8F5E9;
+  background: #E3F2FD;
   border: 1px solid var(--color-border, #E2E8F0);
   border-left: 4px solid #94a3b8;
   border-radius: 14px;
@@ -215,7 +215,7 @@
 
 .alert-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(39, 111, 39, 0.12);
+  box-shadow: 0 8px 20px rgba(33, 150, 243, 0.12);
 }
 
 .alert-card-critical {
@@ -227,7 +227,7 @@
 }
 
 .alert-card-info {
-  border-left-color: #2563eb;
+  border-left-color: #2196F3;
 }
 
 .alert-card-icon {
@@ -238,8 +238,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: rgba(39, 111, 39, 0.12);
-  color: #276F27;
+  background: rgba(33, 150, 243, 0.12);
+  color: #0D47A1;
 }
 
 .alert-card-critical .alert-card-icon {
@@ -253,8 +253,8 @@
 }
 
 .alert-card-info .alert-card-icon {
-  background: rgba(37, 99, 235, 0.12);
-  color: #2563eb;
+  background: rgba(33, 150, 243, 0.12);
+  color: #2196F3;
 }
 
 .alert-card-body {
@@ -295,7 +295,7 @@
   flex-shrink: 0;
   align-self: center;
   padding: 8px 14px;
-  background: #276F27;
+  background: #0D47A1;
   color: #fff;
   font-size: 12.5px;
   font-weight: 600;
@@ -306,10 +306,9 @@
 }
 
 .alert-card-link:hover {
-  background: #266210;
+  background: #0D47A1;
 }
 
-/* Shared badges (kept consistent with the rest of the app) */
 .badge {
   display: inline-block;
   padding: 4px 10px;
@@ -335,8 +334,8 @@
 }
 
 .badge-info {
-  background: rgba(37, 99, 235, 0.12);
-  color: #2563eb;
+  background: rgba(33, 150, 243, 0.12);
+  color: #2196F3;
 }
 
 @media (max-width: 640px) {

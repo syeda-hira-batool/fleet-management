@@ -75,7 +75,7 @@
 }
 
 .reportpage-select:focus {
-  border-color: #6366f1;
+  border-color: #2196F3;
 }
 
 .reportpage-btn {
@@ -94,7 +94,7 @@
 }
 
 .reportpage-btn:hover {
-  border-color: #c7d2fe;
+  border-color: #90CAF9;
 }
 
 .reportpage-btn:disabled {
@@ -103,13 +103,13 @@
 }
 
 .reportpage-btn-primary {
-  background: #111827;
-  border-color: #111827;
+  background: #0D47A1;
+  border-color: #0D47A1;
   color: #fff;
 }
 
 .reportpage-btn-primary:hover {
-  background: #1f2937;
+  background: #2196F3;
 }
 
 .report-print-wrapper {
@@ -123,7 +123,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 2px solid #111827;
+  border-bottom: 2px solid #0D47A1;
   padding-bottom: 16px;
   margin-bottom: 24px;
 }

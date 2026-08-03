@@ -149,7 +149,6 @@ export default function ReportPage() {
       }
     }
     loadAll();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
