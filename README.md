@@ -3,15 +3,71 @@
 <p align="center">
   A modern, responsive Fleet Management Dashboard built with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.
 </p>
+---
+# Screenshots
+
+## 🏠 Home Page:
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-19-blue?logo=react">
-  <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript">
-  <img src="https://img.shields.io/badge/TailwindCSS-4-38BDF8?logo=tailwindcss">
-  <img src="https://img.shields.io/badge/Vite-Latest-646CFF?logo=vite">
+  <img src="./readmes/readme1.png" alt="Home Page" width="100%">
 </p>
 
 ---
+
+## 📊 Analytics Page:
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme6.png" alt="Analytics Page" width="100%">
+</p>
+
+---
+
+## 🚗 Vehicles Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme2.png" alt="Vehicles Page" width="100%">
+</p>
+
+---
+
+## 🚙 Vehicle Details Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme8.png" alt="Vehicle Details Page" width="100%">
+</p>
+
+---
+
+## 👨‍✈️ Drivers Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme4.png" alt="Drivers Page" width="100%">
+</p>
+
+---
+
+## 🔧 Maintenance Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme5.png" alt="Maintenance Page" width="100%">
+</p>
+
+---
+
+## 🚨 Alerts Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme7.png" alt="Alerts Page" width="100%">
+</p>
+
+---
+
+## 📑 Reports Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme3.png" alt="Reports Page" width="100%">
+</p>
+
 
 ##  Overview
 
@@ -52,69 +108,6 @@ The dashboard emphasizes:
 
 ---
 
-# Screenshots
-
-## 🏠 Home Page:
-
-<p align="center">
-  <img src="./readmes/readme1.png" alt="Home Page" width="100%">
-</p>
-
----
-
-## 📊 Analytics Page:
-
-<p align="center">
-  <img src="./readmes/readme6.png" alt="Analytics Page" width="100%">
-</p>
-
----
-
-## 🚗 Vehicles Page
-
-<p align="center">
-  <img src="./readmes/readme2.png" alt="Vehicles Page" width="100%">
-</p>
-
----
-
-## 🚙 Vehicle Details Page
-
-<p align="center">
-  <img src="./readmes/readme8.png" alt="Vehicle Details Page" width="100%">
-</p>
-
----
-
-## 👨‍✈️ Drivers Page
-
-<p align="center">
-  <img src="./readmes/readme4.png" alt="Drivers Page" width="100%">
-</p>
-
----
-
-## 🔧 Maintenance Page
-
-<p align="center">
-  <img src="./readmes/readme5.png" alt="Maintenance Page" width="100%">
-</p>
-
----
-
-## 🚨 Alerts Page
-
-<p align="center">
-  <img src="./readmes/readme7.png" alt="Alerts Page" width="100%">
-</p>
-
----
-
-## 📑 Reports Page
-
-<p align="center">
-  <img src="./readmes/readme3.png" alt="Reports Page" width="100%">
-</p>
 
 # 🚀 Getting Started
 
