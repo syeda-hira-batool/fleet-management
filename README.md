@@ -1,127 +1,164 @@
 # 🚚 Fleet Management Dashboard
 
-A modern and responsive Fleet Management Dashboard built with **React**, **TypeScript**, and **CSS**. This project provides an intuitive interface for monitoring vehicles, drivers, maintenance schedules, reports, analytics, and alerts in one place.
-
-## 🎥 Demo
-
 <p align="center">
-  <img src="./fleet-management-dashboard/fleet.PNG" alt="Fleet Management Dashboard Demo" width="100%">
+  A modern, responsive Fleet Management Dashboard built with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.
 </p>
 ---
+# Screenshots
 
-## ✨ Features
+## 🏠 Home Page:
 
--  Vehicle Management
--  Driver Management
--  Interactive Analytics Dashboard
--  Reports Page
--  Maintenance Tracking
--  Alerts & Notifications
--  Responsive Sidebar Navigation
--  Clean and Modern UI
--  Fast React + Vite Development
+<p align="center">
+  <img src="./readmes/readme1.png" alt="Home Page" width="100%">
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+## 📊 Analytics Page:
 
-- React
-- TypeScript
-- Vite
-- CSS3
-- React Router DOM
-- Recharts
-- Lucide React
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme6.png" alt="Analytics Page" width="100%">
+</p>
 
 ---
 
-## 📂 Project Structure
+## 🚗 Vehicles Page
 
-```text
-fleet-management/
-│
-├── fleet-management-dashboard/
-│   ├── src/
-│   │   ├── Components/
-│   │   ├── assets/
-│   │   ├── pages/
-│   │   └── App.tsx
-│   │
-│   ├── public/
-│   ├── fleet.gif
-│   ├── package.json
-│   └── vite.config.ts
-│
-└── README.md
-```
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme2.png" alt="Vehicles Page" width="100%">
+</p>
 
 ---
 
-##  Getting Started
+## 🚙 Vehicle Details Page
 
-### Clone the repository
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme8.png" alt="Vehicle Details Page" width="100%">
+</p>
+
+---
+
+## 👨‍✈️ Drivers Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme4.png" alt="Drivers Page" width="100%">
+</p>
+
+---
+
+## 🔧 Maintenance Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme5.png" alt="Maintenance Page" width="100%">
+</p>
+
+---
+
+## 🚨 Alerts Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme7.png" alt="Alerts Page" width="100%">
+</p>
+
+---
+
+## 📑 Reports Page
+
+<p align="center">
+  <img src="./fleet-management-dashboard/readmes/readme3.png" alt="Reports Page" width="100%">
+</p>
+
+
+##  Overview
+
+Fleet Management Dashboard is a clean and responsive admin interface designed to help monitor vehicles, drivers, and fleet operations efficiently.
+
+The dashboard emphasizes:
+
+- Data visualization
+- Vehicle tracking
+- Driver management
+- Analytics
+- Responsive design
+- Fast performance
+
+---
+
+# Features
+
+- Interactive Dashboard
+- Fleet Overview
+- Vehicle Management
+- Driver Information
+- Statistics Cards
+- Fully Responsive Layout
+- Built with React + TypeScript
+- Modern UI using Tailwind CSS
+
+---
+
+# Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React | Frontend Framework |
+| TypeScript | Type Safety |
+| Tailwind CSS | Styling |
+| Vite | Build Tool |
+
+---
+
+
+# 🚀 Getting Started
+
+Clone the repository
 
 ```bash
 git clone https://github.com/syeda-hira-batool/fleet-management.git
 ```
 
-### Navigate to the project
+Go into the project
 
 ```bash
 cd fleet-management/fleet-management-dashboard
 ```
 
-### Install dependencies
+Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run the development server
+Start the development server
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit:
+Build for production
 
-```
-http://localhost:5173
+```bash
+npm run build
 ```
 
 ---
 
-## 📸 Dashboard Pages
+# Future Improvements
 
--  Home Dashboard
--  Vehicles
--  Drivers
--  Maintenance
--  Reports
--  Analytics
--  Alerts
-
----
-
-## 📈 Future Improvements
-
-- User Authentication
-- Role-Based Access Control
+- Authentication
 - Dark Mode
-- Real-time GPS Tracking
-- Fuel Consumption Analytics
-- Vehicle Assignment System
-- Export Reports (PDF/Excel)
-- REST API Integration
-- Database Connectivity
+- Live GPS Tracking
+- Notifications
+- Maintenance Scheduling
+- Advanced Analytics
+- Export Reports
+- Backend Integration
 
 ---
 
-##  Author
+# Author
 
 **Syeda Hira Batool**
 
-- GitHub: https://github.com/syeda-hira-batool
-- LinkedIn: https://www.linkedin.com/in/syeda-hira-batool-759419371/
+GitHub: https://github.com/syeda-hira-batool
 
----
