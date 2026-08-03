@@ -20,7 +20,7 @@ Fleet Management Dashboard is a modern and responsive admin dashboard designed t
 ## Vehicles Page:
 
 <p align="center">
-  <img src="./readmes/readme2.png" alt="Vehicles Page" width="100%">
+  <img src="./readmes/readme2.PNG" alt="Vehicles Page" width="100%">
 </p>
 
 ---
@@ -28,7 +28,7 @@ Fleet Management Dashboard is a modern and responsive admin dashboard designed t
 ## Reports Page:
 
 <p align="center">
-  <img src="./readmes/readme3.png" alt="Reports Page" width="100%">
+  <img src="./readmes/readme3.PNG" alt="Reports Page" width="100%">
 </p>
 
 ---
@@ -36,7 +36,7 @@ Fleet Management Dashboard is a modern and responsive admin dashboard designed t
 ## Drivers Page:
 
 <p align="center">
-  <img src="./readmes/readme4.png" alt="Drivers Page" width="100%">
+  <img src="./readmes/readme4.PNG" alt="Drivers Page" width="100%">
 </p>
 
 ---
@@ -44,7 +44,7 @@ Fleet Management Dashboard is a modern and responsive admin dashboard designed t
 ## Maintenance Page:
 
 <p align="center">
-  <img src="./readmes/readme5.png" alt="Maintenance Page" width="100%">
+  <img src="./readmes/readme5.PNG" alt="Maintenance Page" width="100%">
 </p>
 
 ---
@@ -52,7 +52,7 @@ Fleet Management Dashboard is a modern and responsive admin dashboard designed t
 ## Analytics Page:
 
 <p align="center">
-  <img src="./readmes/readme6.png" alt="Analytics Page" width="100%">
+  <img src="./readmes/readme6.PNG" alt="Analytics Page" width="100%">
 </p>
 
 ---
@@ -60,7 +60,7 @@ Fleet Management Dashboard is a modern and responsive admin dashboard designed t
 ## Alerts Page:
 
 <p align="center">
-  <img src="./readmes/readme7.png" alt="Alerts Page" width="100%">
+  <img src="./readmes/readme7.PNG" alt="Alerts Page" width="100%">
 </p>
 
 ---
@@ -68,7 +68,7 @@ Fleet Management Dashboard is a modern and responsive admin dashboard designed t
 ## Vehicle Details Page:
 
 <p align="center">
-  <img src="./readmes/readme8.png" alt="Vehicle Details Page" width="100%">
+  <img src="./readmes/readme8.PNG" alt="Vehicle Details Page" width="100%">
 </p>
 
 ---
