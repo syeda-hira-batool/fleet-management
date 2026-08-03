@@ -1,10 +1,6 @@
 # 🚚 Fleet Management Dashboard
 
 <p align="center">
-  <img src="./fleet-management-dashboard/fleet.png" alt="Fleet Management Dashboard Banner" width="100%">
-</p>
-
-<p align="center">
   A modern, responsive Fleet Management Dashboard built with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.
 </p>
 
