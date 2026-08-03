@@ -3,10 +3,16 @@
 <p align="center">
   A modern, responsive Fleet Management Dashboard built with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.
 </p>
----
-# Screenshots
 
-## 🏠 Home Page:
+
+# Overview:
+
+Fleet Management Dashboard is a modern and responsive admin dashboard designed to streamline fleet operations. It provides an intuitive interface for monitoring vehicles, managing drivers, viewing analytics, tracking maintenance, and generating reports.
+
+---
+
+
+## Home Page:
 
 <p align="center">
   <img src="./readmes/readme1.png" alt="Home Page" width="100%">
@@ -14,128 +20,127 @@
 
 ---
 
-## 📊 Analytics Page:
+## Vehicles Page:
 
 <p align="center">
-  <img src="./fleet-management-dashboard/readmes/readme6.png" alt="Analytics Page" width="100%">
+  <img src="./readmes/readme2.png" alt="Vehicles Page" width="100%">
 </p>
 
 ---
 
-## 🚗 Vehicles Page
+## Reports Page:
 
 <p align="center">
-  <img src="./fleet-management-dashboard/readmes/readme2.png" alt="Vehicles Page" width="100%">
+  <img src="./readmes/readme3.png" alt="Reports Page" width="100%">
 </p>
 
 ---
 
-## 🚙 Vehicle Details Page
+## Drivers Page:
 
 <p align="center">
-  <img src="./fleet-management-dashboard/readmes/readme8.png" alt="Vehicle Details Page" width="100%">
+  <img src="./readmes/readme4.png" alt="Drivers Page" width="100%">
 </p>
 
 ---
 
-## 👨‍✈️ Drivers Page
+## Maintenance Page:
 
 <p align="center">
-  <img src="./fleet-management-dashboard/readmes/readme4.png" alt="Drivers Page" width="100%">
+  <img src="./readmes/readme5.png" alt="Maintenance Page" width="100%">
 </p>
 
 ---
 
-## 🔧 Maintenance Page
+## Analytics Page:
 
 <p align="center">
-  <img src="./fleet-management-dashboard/readmes/readme5.png" alt="Maintenance Page" width="100%">
+  <img src="./readmes/readme6.png" alt="Analytics Page" width="100%">
 </p>
 
 ---
 
-## 🚨 Alerts Page
+## Alerts Page:
 
 <p align="center">
-  <img src="./fleet-management-dashboard/readmes/readme7.png" alt="Alerts Page" width="100%">
+  <img src="./readmes/readme7.png" alt="Alerts Page" width="100%">
 </p>
 
 ---
 
-## 📑 Reports Page
+## Vehicle Details Page:
 
 <p align="center">
-  <img src="./fleet-management-dashboard/readmes/readme3.png" alt="Reports Page" width="100%">
+  <img src="./readmes/readme8.png" alt="Vehicle Details Page" width="100%">
 </p>
 
+---
 
-##  Overview
+### Highlights:
 
-Fleet Management Dashboard is a clean and responsive admin interface designed to help monitor vehicles, drivers, and fleet operations efficiently.
-
-The dashboard emphasizes:
-
-- Data visualization
-- Vehicle tracking
+- Interactive analytics dashboard
+- Vehicle tracking and management
 - Driver management
-- Analytics
-- Responsive design
-- Fast performance
+- Maintenance monitoring
+- Reports and insights
+- Fully responsive design
+- Fast performance with Vite
 
 ---
 
-# Features
+# Features:
 
 - Interactive Dashboard
 - Fleet Overview
 - Vehicle Management
 - Driver Information
 - Statistics Cards
+- Reports Section
+- Alerts Management
 - Fully Responsive Layout
-- Built with React + TypeScript
-- Modern UI using Tailwind CSS
+- Built with React & TypeScript
+- Modern UI with Tailwind CSS
 
 ---
 
-# Tech Stack
+# Tech Stack:
 
 | Technology | Purpose |
 |------------|---------|
 | React | Frontend Framework |
-| TypeScript | Type Safety |
+| TypeScript | Static Type Checking |
 | Tailwind CSS | Styling |
 | Vite | Build Tool |
 
 ---
 
+# Getting Started:
 
-# 🚀 Getting Started
-
-Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/syeda-hira-batool/fleet-management.git
 ```
 
-Go into the project
+### Navigate to the project
 
 ```bash
 cd fleet-management/fleet-management-dashboard
 ```
 
-Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
-Build for production
+### Build for production
 
 ```bash
 npm run build
@@ -143,12 +148,12 @@ npm run build
 
 ---
 
-# Future Improvements
+# Future Improvements:
 
-- Authentication
+- User Authentication
 - Dark Mode
 - Live GPS Tracking
-- Notifications
+- Real-time Notifications
 - Maintenance Scheduling
 - Advanced Analytics
 - Export Reports
@@ -156,9 +161,10 @@ npm run build
 
 ---
 
-# Author
+# Author:
 
 **Syeda Hira Batool**
 
-GitHub: https://github.com/syeda-hira-batool
+- GitHub: https://github.com/syeda-hira-batool
 
+---
