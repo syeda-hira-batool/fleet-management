@@ -169,5 +169,6 @@ npm run build
 **Syeda Hira Batool**
 
 - GitHub: https://github.com/syeda-hira-batool
+- LinkedIn: 
 
 ---
