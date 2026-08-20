@@ -3,6 +3,11 @@
 <p align="center">
   A modern, responsive Fleet Management Dashboard built with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.
 </p>
+## 🎥 Project Demo
+
+<a href="https://www.youtube.com/watch?v=ZbDDHFKk1RY">
+  <img src="https://img.youtube.com/vi/ZbDDHFKk1RY/maxresdefault.jpg" width="700" alt="Watch Project Demo">
+</a>
 
 # Overview:
 
