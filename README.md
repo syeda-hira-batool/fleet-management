@@ -3,17 +3,17 @@
 <p align="center">
   A modern, responsive Fleet Management Dashboard built with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.
 </p>
+
+# Overview:
+
+Fleet Management Dashboard is a modern and responsive admin dashboard designed to streamline fleet operations. It provides an intuitive interface for monitoring vehicles, managing drivers, viewing analytics, tracking maintenance, and generating reports.
+
 # Project Demo:
 <br>
 
 <a href="https://www.youtube.com/watch?v=ZbDDHFKk1RY">
   <img src="https://img.youtube.com/vi/ZbDDHFKk1RY/maxresdefault.jpg" width="700" alt="Watch Project Demo">
 </a>
-
-# Overview:
-
-Fleet Management Dashboard is a modern and responsive admin dashboard designed to streamline fleet operations. It provides an intuitive interface for monitoring vehicles, managing drivers, viewing analytics, tracking maintenance, and generating reports.
-
 
 ## Home Page:
 
